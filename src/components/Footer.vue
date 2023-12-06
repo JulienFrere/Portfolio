@@ -1,4 +1,3 @@
-<script setup></script>
 
 <template>
   <footer>
@@ -7,8 +6,13 @@
     <a href="https://twitter.com/Hito_Atz" target="_blank"><img src="../assets/images/twitter.png" alt="twitter" /></a>
     <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img src="../assets/images/youtube.png" alt="youtube" /></a>
     <p>&copy; 2023 - Mon Portfolio</p>
+    <p>Dernière mise à jour : <time datetime="2023-12-06">6 décembre 2023</time></p>
   </footer>
 </template>
+
+<script setup>
+
+</script>
 
 <style scoped>
 footer {
@@ -39,5 +43,9 @@ footer a img {
 footer a:hover {
   transform: scale(1.2);
   border-color: rgb(255, 255, 0);
+}
+
+footer p {
+  color: white;
 }
 </style>

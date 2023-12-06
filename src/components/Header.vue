@@ -47,12 +47,15 @@ onMounted(() => {
       <div class="container">
         <ul>
           <li><RouterLink to="/">Accueil</RouterLink></li>
-          <li><RouterLink to="{ name: 'Error404'}">Projets</RouterLink></li>
-          <li><RouterLink to="{ name: 'Error404'}">Contact</RouterLink></li>
+          <li><RouterLink :to="{ name: 'Error404' }">Projets</RouterLink></li>
+          <li><RouterLink :to="{ name: 'Error404' }">Contact</RouterLink></li>
         </ul>
       </div>
     </nav>
   </header>
+  <div class="logo-container">
+    <img src="../assets/images/sunset2.png" alt="Ton logo" class="logo" />
+  </div>
 </template>
 
 <style scoped>
@@ -68,6 +71,19 @@ onMounted(() => {
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
   cursor: pointer;
   opacity: 0; /* Masquer la photo au début */
+}
+
+/* Styles pour le conteneur du logo */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px; /* Ajuste la marge en haut du logo selon tes besoins */
+}
+
+/* Styles pour le logo */
+.logo {
+  width: 70px; /* Largeur souhaitée */
+  height: auto; /* La hauteur s'ajustera automatiquement pour garder les proportions */
 }
 
 header nav ul li:hover a {

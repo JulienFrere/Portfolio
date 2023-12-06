@@ -17,8 +17,8 @@ const toggleModal = (value) => {
     <div id="WelcomeItem">
     <h1>Bienvenue sur mon Portfolio !</h1>
     <p>
-      <h3>Bonjour à tous ! Je m'appelle Julien Frere et je suis apprenti développeur web en formation. Passionné par le monde du développement, je suis constamment en quête de
-      nouvelles connaissances et de défis excitants dans ce domaine en évolution permanente!</h3>
+      Bonjour à tous ! Je m'appelle Julien Frere et je suis apprenti développeur web en formation. Passionné par le monde du développement, je suis constamment en quête de
+      nouvelles connaissances et de défis excitants dans ce domaine en évolution permanente!
     </p>
   </div>
   <div class="main-element-container">
@@ -56,7 +56,7 @@ const toggleModal = (value) => {
 
 /* Ajoutez un style pour la classe main-element-container */
 .main-element-container {
-  margin-top: 200px; /* Augmentation de l'espace entre les éléments */
+  margin-top: 300px; /* Augmentation de l'espace entre les éléments */
 }
 
 /* Styles pour MainElement */

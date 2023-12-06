@@ -1,29 +1,24 @@
-# portfolio7
+# Portfolio de Julien Frere
 
-This template should help get you started developing with Vue 3 in Vite.
+## Description
+Le portfolio présente mes réalisations, compétences et expériences en développement web.
 
-## Recommended IDE Setup
+## Prérequis
+- Node.js
+- Vue.js
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Installation
+1. Cloner le repository : `git clone https://github.com/JulienFrere/Portfolio.git`
+2. Accéder au dossier du projet : `cd Portfolio`
+3. Installer les dépendances : `npm install`
 
-## Customize configuration
+## Lancement
+- Pour lancer l'application : `npm run serve`
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+## Technologies utilisées
+- Vue.js
+- HTML
+- CSS
 
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+## Auteur
+Julien Frere

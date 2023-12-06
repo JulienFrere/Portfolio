@@ -11,11 +11,4 @@ body{
     color: black;
    }
 
-   @font-face {
-    font-family: 'Grandstander';
-    src: url(../assets/fonts/Grandstander-Medium.ttf) format('truetype');
-  }
 
-  .header {
-    font-family: 'Grandstander', sans-serif
-  }
