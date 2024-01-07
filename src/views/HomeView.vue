@@ -21,17 +21,23 @@ const toggleModal = (value) => {
       nouvelles connaissances et de défis excitants dans ce domaine en évolution permanente!
     </p>
   </div>
-  <div class="main-element-container">
+
+  <router-link to="#section1" class="nav-link" >Aller à la section Projets</router-link>
+  <router-link to="#section2" class="nav-link">Aller à la section Me Contacter !</router-link>
+
+  <div id="section1" class="main-element-container">
     <MainElement :showModal="showModal" :toggleModal="toggleModal" />
     </div>
+    <div id="section2">
     <MyContact /> 
+  </div>
   </main>
 </template>
 
 <style scoped>
 #WelcomeItem {
-  position: absolute; /* Utilisation de la position absolue */
-  top: 150px; /* Ajuster la position verticale selon vos besoins */
+  position: absolute; 
+  top: 150px; 
   left: 20px;
   right: 20px;
   text-align: center;
@@ -42,11 +48,34 @@ const toggleModal = (value) => {
   color: black;
   padding: 20px;
   box-sizing: border-box;
-  z-index: 1; /* Assurer que l'élément est au-dessus de l'image de fond si nécessaire */
+  z-index: 1; 
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
+  font-family:'Barlow', sans-serif;
 }
+
+.nav-link {
+    display: block;
+    box-sizing: border-box;
+    width:200px;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #3498db;
+    border: 2px solid #2980b9;
+    border-radius: 5px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 8px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+  }
+
+  .nav-link:hover {
+    background-color: #2980b9;
+    border-color: rgb(255, 255, 0);
+  }
 
 #WelcomeItem h1,
 #WelcomeItem p {
@@ -56,14 +85,13 @@ const toggleModal = (value) => {
 
 /* Ajoutez un style pour la classe main-element-container */
 .main-element-container {
-  margin-top: 300px; /* Augmentation de l'espace entre les éléments */
+  margin-top: 300px; 
 }
 
-/* Styles pour MainElement */
-/* Redimensionnez la police et ajoutez de l'espace autour du texte */
+
 #MyProjects {
-  font-size: small; /* Réduction de la taille de la police */
-  margin: 20px 50px; /* Ajout d'espace autour du texte */
-  /* Ajoutez d'autres styles si nécessaire */
+  font-size: small; 
+  margin: 20px 50px; 
+  
 }
 </style>

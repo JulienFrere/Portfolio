@@ -67,6 +67,7 @@ h2 {
   text-align: center;
   margin-bottom: 20px;
   color: #007bff;
+  font-family:'Barlow', sans-serif;
 }
 
 p {

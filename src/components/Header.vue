@@ -59,7 +59,7 @@ onMounted(() => {
 </template>
 
 <style scoped>
-/* Styles pour la photo de retour en haut */
+/* Style pour la photo de retour en haut */
 .return-top-photo {
   position: absolute;
   left: 20px;
@@ -70,26 +70,26 @@ onMounted(() => {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
   cursor: pointer;
-  opacity: 0; /* Masquer la photo au début */
+  opacity: 0; 
 }
 
 /* Styles pour le conteneur du logo */
 .logo-container {
   display: flex;
   justify-content: center;
-  margin-top: 10px; /* Ajuste la marge en haut du logo selon tes besoins */
+  margin-top: 10px; 
 }
 
 /* Styles pour le logo */
 .logo {
-  width: 70px; /* Largeur souhaitée */
-  height: auto; /* La hauteur s'ajustera automatiquement pour garder les proportions */
+  width: 70px; 
+  height: auto; 
 }
 
 header nav ul li:hover a {
-  text-decoration: underline; /* Souligner le lien survolé */
-  font-weight: bold; /* Optionnel : mettre en gras le lien survolé */
-  /* Ajoute d'autres styles souhaités pour le lien survolé */
+  text-decoration: underline; 
+  font-weight: bold; 
+  
 }
 
 header {
@@ -101,6 +101,7 @@ header {
   margin: 1rem 1rem 0;
   border-radius: 0.5rem;
   text-align: center;
+  font-family:'Barlow', sans-serif;
 }
 
 header nav ul {

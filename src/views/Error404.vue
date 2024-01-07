@@ -13,14 +13,13 @@ export default {};
 
 <style scoped>
 /* Styles pour le composant Error404.vue */
-
 .error-page {
-  /* Centrage du contenu */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh; /* Hauteur de la fenêtre visible */
+  height: 100vh; 
+  font-family:'Barlow', sans-serif;
 }
 
 /* Style pour l'image de fond */

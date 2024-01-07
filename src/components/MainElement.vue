@@ -10,24 +10,34 @@
 
 <script setup>
 import Project from "../components/Project.vue";
+
 const projects = [
   {
     title: "Projet de CV en HTML et CSS",
-    description: "Mon premier projet était un CV, après avoir assimilé les bases du HTML et du CSS",
-    img: "./images/CVentier.png",
+    description: "Mon premier projet était un CV, après avoir assimilé les bases du HTML et du CSS, le projet était principalement là pour montrer l'acquisition de compétences, ici c'étais le fonctionnement d'un projet en HTML5 ainsi que CSS3 pour la mise en forme",
+    img: "../images/CVentier.png",
     technologies: "HTML et CSS",
     githubLink: "https://github.com/JulienFrere/cv.git",
     createdAt: "20 Octobre 2023",
+    additionalPhotos: [
+      "/src/assets/images/CvPhotoHeader.png",
+      "/src/assets/images/CvLogoAction.png",
+      "/src/assets/images/CvLogoFooter.png"
+    ],
   },
   {
     title: "Projet d'espace commentaire dynamique en HTML, CSS et JavaScript",
-    description: "Mon second projet avait pour but de dynamiser un espace commentaire à l'aide de JavaScript",
-    img: "./images/dynamique1.png",
+    description: "Mon second projet avait pour but de dynamiser un espace commentaire à l'aide de JavaScript, la consigne étant de pouvoir afficher un commentaire qui s'actualiserait de manière immediate, donc dynamiquement, il s'agissait de ma première utilisation du JavaScript.",
+    img: "../images/dynamique1.png",
     technologies: "HTML , CSS et JavaScript",
     githubLink: "https://github.com/JulienFrere/ExerciceDynamiser.git",
     createdAt: "14 Novembre 2023",
+    additionalPhotos: [
+      "/src/assets/images/dynamique1.png",
+      "/src/assets/images/dynamique4.png"
+    ],
   },
-  // Ajoute ici les autres projets de manière similaire
+  // Futur projet ! 
   {
     title: "Futur projet...",
     description: "Description du nouveau projet",
@@ -39,26 +49,29 @@ const projects = [
 </script>
 
 <style scoped>
-/* Styles pour la container des projets */
+
+/* Style pour le container des projets */
 #MyProjects h2 {
   font-size: xx-large;
-  text-align: center; /* Centrer horizontalement */
-  margin-top: 400px; /* Ajouter de l'espace en haut */
-  margin-bottom: 60px; /* Ajouter de l'espace en bas */
+  text-align: center; 
+  margin-top: 400px; 
+  margin-bottom: 60px; 
+  font-family:'Barlow', sans-serif;
 }
 
 .projects-container {
   display: flex;
-  flex-wrap: wrap; /* Permettre le retour à la ligne si nécessaire */
-  gap: 30px; /* Espacement entre les projets */
-  max-width: 800px; /* Largeur maximale des projets */
-  margin: 0 auto; /* Centrer les projets horizontalement */
+  flex-wrap: wrap; 
+  gap: 30px; 
+  max-width: 800px; 
+  margin: 0 auto; 
   margin-bottom: 200px;
   align-items: center;
   justify-content: center;
+  font-family:'Barlow', sans-serif;
 }
 
-/* Garde tes styles pour la grille de projets existante */
+/* Style pour la grille de projets existante */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -67,19 +80,20 @@ const projects = [
   margin: 0 auto;
 }
 
-/* Nouveaux styles pour ajuster la taille des images */
+/* style pour ajuster la taille des images */
 .projects-grid .project .project-image img {
   max-width: 100%;
-  max-height: 200px; /* Ajuste la hauteur maximale selon tes préférences */
+  max-height: 200px; 
   width: auto;
   height: auto;
   align-items: center;
 }
 
-/* Styles pour chaque projet individuel */
+/* Style pour chaque projet individuel */
 .project {
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   overflow: hidden;
 }
+
 </style>

@@ -6,7 +6,7 @@
     <a href="https://twitter.com/Hito_Atz" target="_blank"><img src="../assets/images/twitter.png" alt="twitter" /></a>
     <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img src="../assets/images/youtube.png" alt="youtube" /></a>
     <p>&copy; 2023 - Mon Portfolio</p>
-    <p>Dernière mise à jour : <time datetime="2023-12-06">6 décembre 2023</time></p>
+    <p>Dernière mise à jour : <time datetime="2024-01-07">7 Janvier 2024</time></p>
   </footer>
 </template>
 
@@ -25,6 +25,7 @@ footer {
   text-align: center;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   font-size: 1rem;
+  font-family:'Barlow', sans-serif;
 }
 
 footer a {
